@@ -23,6 +23,9 @@ repositories {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
-    implementation('org.projectlombok:lombok')
+    implementation('org.projectlombok:lombok')  //lombok은 Getter, Setter, toString 등의 작성코드를 줄여주는 code diet library
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa') // JPA 라이브러리 버전 관리
+    implementation('com.h2database:h2') // 관계형 데이터베이스 (예를 들면 고객 ID를 공통 KEY로 검색할수 있는 전화번호 테이블과 집주소 테이블이 관계형 데이터 베이스이다)
+
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
